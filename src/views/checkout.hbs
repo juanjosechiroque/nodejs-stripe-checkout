@@ -1,0 +1,36 @@
+<div class="container p-4">
+  <div class="row">    
+    <div class="col-md-4 mx-auto">
+      <div class="card">
+        <img src="img/software-product.jpg" alt="software product" class="card-img-top">        
+        <div class="card-body">        
+          <h2>$30.00</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sit et officiis deleniti quis. Aliquam.
+          </p>        
+        </div>        
+        <div class="card-footer">             
+          
+          <form action="/checkout" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js"
+              class="stripe-button"
+              data-key="pk_test_51HRq0FHAnt7rv02lCnFoThq4NehXwPuURLqys65SdIFqq4wgltewV2ObZ4wgMHnNaMiBEE7jWUS1NRDIxuVOOEY80028H7QHqW"
+              data-name="Software Store"
+              data-description="Software Editing Video"
+              data-image="img/logo.jpg"
+              data-amount="3000"
+              data-currency="usd">
+            </script>
+            <script>
+              document.querySelector(".stripe-button-el").style.display = "none";
+            </script>
+            <button class="btn btn-primary btn-block">
+              Buy <i class="fas fa-shopping-cart"></i>
+            </button>          
+          </form>                    
+        </div>        
+      </div>    
+    </div>  
+  </div>
+</div>
